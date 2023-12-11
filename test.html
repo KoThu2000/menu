@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul{
+            list-style: none;
+        }
+        nav ul li{
+            margin: 0 1em;
+            display: inline-block;
+            font-size: 2em;
+            position: relative;
+            font-weight: bold;
+        }
+        nav ul li::after{
+            content: '';
+            width: 0;
+            height: 3px;
+            position: absolute;
+            transition: 0.5s;
+            top:30px;
+            left: 0;
+            background-color: brown;
+        }
+        nav ul li:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project</h1>
+        <nav>
+            <ul>
+                <li>Hello</li>
+                <li>Hi</li>
+                <li>Hola</li>
+                <li>Mingalabar</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
